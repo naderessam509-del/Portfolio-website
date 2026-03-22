@@ -1,0 +1,108 @@
+/* ================== BODY ================== */
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* ================== HEADER ================== */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #f0a500;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: #f0a500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* ================== SECTION ================== */
+.project-details {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* صورة المشروع */
+.project-details img {
+    width: 100%;
+    border: 2px solid #111;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* ================== TITLES ================== */
+.project-details h2,
+.project-details h3 {
+  display: flex;
+  justify-content: center; /* محاذاة عمودية في المنتصف */
+    align-items: center;     /* محاذاة أفقية في المنتصف */
+    text-align: center;      /* للتأكيد على النص */
+    min-height: 100px;       /* ارتفاع مريح للهيدر */
+    color: #111;
+    
+    margin-bottom: 10px;
+}
+
+/* ================== TEXT ================== */
+.project-details p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ================== GRID ================== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ================== CARD (هادي) ================== */
+.feature-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+/* عنوان الكارت */
+.feature-card h4 {
+    color: #f0a500;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+/* ================== FOOTER ================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+footer .designer {
+  font-weight: bold;
+  color: #f0a500; /* لون برتقالي */
+  
+}
+
+
+/* ================== RESPONSIVE ================== */
+@media(max-width:480px){
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
